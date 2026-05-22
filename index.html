@@ -7,154 +7,34 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f1e8;color:#1b1b1b;line-height:1.6}
+nav{background:#102417;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px}
+.badge{border:2px solid #d7b46a;border-radius:50%;padding:10px 13px;color:#d7b46a;font-weight:bold}
+nav h2{font-size:22px}
+nav a{color:white;text-decoration:none;margin-left:18px}
 
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  color:#1d1d1d;
-  background:#f2f0ea;
-  line-height:1.6;
-}
+.hero{background:#163b24;color:white;padding:90px 7%}
+.hero h1{font-size:52px;max-width:700px;line-height:1.1}
+.hero p{font-size:20px;margin:18px 0 28px;max-width:650px}
+.btn{display:inline-block;background:#d7b46a;color:#102417;padding:14px 22px;border-radius:5px;text-decoration:none;font-weight:bold;margin:6px}
 
-nav{
-  background:#102417;
-  color:white;
-  padding:18px 7%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
+section{padding:65px 7%;max-width:1200px;margin:auto}
+h2{color:#163b24;font-size:34px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:white;padding:24px;border-left:5px solid #d7b46a;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.card h3{color:#163b24;margin-bottom:8px}
 
-nav h2{
-  font-size:22px;
-  letter-spacing:.5px;
-}
+.project{background:white}
+.project img{width:100%;border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,.15)}
+.contact{background:#102417;color:white;text-align:center;max-width:none}
+.contact h2{color:white}
+footer{background:#07100b;color:white;text-align:center;padding:20px}
 
-nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:18px;
-  font-size:15px;
-}
-
-.hero{
-  background:linear-gradient(rgba(16,36,23,.82),rgba(16,36,23,.82)),
-  url("https://images.unsplash.com/photo-1599685315640-69b65c7d0e5f?auto=format&fit=crop&w=1600&q=80");
-  background-size:cover;
-  background-position:center;
-  color:white;
-  padding:95px 7%;
-}
-
-.hero-box{
-  max-width:650px;
-}
-
-.hero h1{
-  font-size:52px;
-  line-height:1.1;
-  margin-bottom:18px;
-}
-
-.hero p{
-  font-size:20px;
-  margin-bottom:28px;
-}
-
-.btn{
-  display:inline-block;
-  background:#d7b46a;
-  color:#102417;
-  padding:14px 22px;
-  border-radius:4px;
-  text-decoration:none;
-  font-weight:bold;
-  margin-right:10px;
-  margin-top:8px;
-}
-
-.btn-dark{
-  background:white;
-}
-
-section{
-  padding:65px 7%;
-}
-
-.intro{
-  background:white;
-  display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:35px;
-}
-
-h2{
-  color:#163b24;
-  font-size:32px;
-  margin-bottom:18px;
-}
-
-.service-list{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:18px;
-}
-
-.service{
-  background:white;
-  border-left:5px solid #d7b46a;
-  padding:22px;
-}
-
-.service h3{
-  color:#163b24;
-  margin-bottom:8px;
-}
-
-.areas{
-  background:#163b24;
-  color:white;
-  text-align:center;
-}
-
-.areas h2{
-  color:white;
-}
-
-.contact{
-  background:white;
-  text-align:center;
-}
-
-.contact p{
-  font-size:18px;
-  margin:8px 0;
-}
-
-footer{
-  background:#102417;
-  color:white;
-  text-align:center;
-  padding:22px;
-  font-size:14px;
-}
-
-@media(max-width:750px){
-  nav{
-    display:block;
-    text-align:center;
-  }
-
-  nav div{
-    margin-top:10px;
-  }
-
-  .hero h1{
-    font-size:38px;
-  }
-
-  .intro{
-    grid-template-columns:1fr;
-  }
+@media(max-width:700px){
+nav{display:block;text-align:center}
+nav div{margin-top:10px}
+.hero h1{font-size:38px}
 }
 </style>
 </head>
@@ -162,97 +42,64 @@ footer{
 <body>
 
 <nav>
-  <h2>Bell & Oaks</h2>
+  <div class="logo">
+    <div class="badge">B&O</div>
+    <h2>Bell & Oaks</h2>
+  </div>
   <div>
     <a href="#services">Services</a>
+    <a href="#work">Work</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="hero">
-  <div class="hero-box">
-    <h1>Lawn care done right.</h1>
-    <p>Quality Care. Honest Results. Serving Tulsa and surrounding areas.</p>
+  <h1>Quality lawn care with honest results.</h1>
+  <p>Serving Tulsa, Bixby, Broken Arrow, Glenpool, and Sapulpa with mowing, cleanup, mulch, and junk removal.</p>
 
-    <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-      Text for a Free Estimate
-    </a>
-
-    <a class="btn btn-dark" href="tel:+19186251118">
-      Call 918-625-1118
-    </a>
-  </div>
+  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">Text for Free Estimate</a>
+  <a class="btn" href="tel:+19186251118">Call 918-625-1118</a>
 </div>
 
-<section class="intro">
-  <div>
-    <h2>Local lawn care you can count on</h2>
-    <p>
-      Bell & Oaks Lawn Care provides dependable mowing, edging, cleanup,
-      mulch, and junk removal services. We keep things simple: show up on time,
-      do clean work, and treat your property with respect.
-    </p>
-  </div>
-
-  <div>
-    <h2>What we focus on</h2>
-    <p>Clean cuts. Sharp edges. Fair pricing. Reliable communication.</p>
-  </div>
+<section>
+  <h2>Local work. Clean finish.</h2>
+  <p>Bell & Oaks Lawn Care keeps yards looking sharp with reliable service, fair pricing, and attention to detail. Whether it’s a regular mow, overgrown cleanup, fresh mulch, or junk removal, we make the process simple.</p>
 </section>
 
 <section id="services">
   <h2>Services</h2>
-
-  <div class="service-list">
-    <div class="service">
-      <h3>Mowing</h3>
-      <p>Regular lawn mowing to keep your yard clean and maintained.</p>
-    </div>
-
-    <div class="service">
-      <h3>Edging</h3>
-      <p>Clean edges along driveways, sidewalks, beds, and walkways.</p>
-    </div>
-
-    <div class="service">
-      <h3>Weed Eating</h3>
-      <p>Trimming around fences, corners, trees, and tight spots.</p>
-    </div>
-
-    <div class="service">
-      <h3>Mulch</h3>
-      <p>Fresh mulch installation for beds and curb appeal.</p>
-    </div>
-
-    <div class="service">
-      <h3>Cleanup</h3>
-      <p>Yard cleanup, debris removal, leaves, and overgrowth.</p>
-    </div>
-
-    <div class="service">
-      <h3>Junk Removal</h3>
-      <p>Removal of unwanted items, yard debris, and outdoor junk.</p>
-    </div>
+  <div class="grid">
+    <div class="card"><h3>Mowing</h3><p>Clean, even cuts for a maintained lawn.</p></div>
+    <div class="card"><h3>Edging</h3><p>Sharp borders along sidewalks and driveways.</p></div>
+    <div class="card"><h3>Weed Eating</h3><p>Trimming around fences, trees, and tight areas.</p></div>
+    <div class="card"><h3>Mulch</h3><p>Fresh mulch for beds and curb appeal.</p></div>
+    <div class="card"><h3>Cleanup</h3><p>Overgrowth, leaves, debris, and yard recovery.</p></div>
+    <div class="card"><h3>Junk Removal</h3><p>Removal of unwanted outdoor items and debris.</p></div>
   </div>
 </section>
 
-<section class="areas">
+<section class="project" id="work">
+  <h2>Recent Cleanup</h2>
+  <p>Overgrown backyard brought back under control with mowing and cleanup.</p>
+  <br>
+  <img src="cleanup-before-after.jpg" alt="Bell and Oaks lawn cleanup before and after">
+</section>
+
+<section>
   <h2>Service Area</h2>
   <p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
 </section>
 
 <section class="contact" id="contact">
   <h2>Get a Free Estimate</h2>
-  <p><strong>Text or Call:</strong> 918-625-1118</p>
-  <p><strong>Email:</strong> gageoaks08@gmail.com</p>
-
-  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-    Send Estimate Text
-  </a>
+  <p>Text or call: 918-625-1118</p>
+  <p>Email: gageoaks08@gmail.com</p>
+  <br>
+  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">Send Estimate Text</a>
 </section>
 
 <footer>
-  © 2026 Bell & Oaks Lawn Care. All rights reserved.
+  © 2026 Bell & Oaks Lawn Care • Quality Care. Honest Results.
 </footer>
 
 </body>
