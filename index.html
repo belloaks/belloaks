@@ -1,41 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bell & Oaks Lawn Care</title>
-<style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 50px;
-  background: #f4f4f4;
-}
-.box {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
-}
-h1 {
-  color: green;
-}
-</style>
+  <title>Bell & Oaks Lawn Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #1f5f2a;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: #1f5f2a;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    }
+
+    h2 {
+      color: #1f5f2a;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #eef7ef;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="box">
+<header>
   <h1>Bell & Oaks Lawn Care</h1>
-  <p>Professional Lawn Care & Landscaping</p>
+  <p>Quality Care. Honest Results.</p>
 
-  <p>✔ Mowing</p>
-  <p>✔ Weed Eating</p>
-  <p>✔ Edging</p>
-  <p>✔ Cleanup</p>
+  <a class="button" href="tel:9186251118">
+    Call or Text For A Free Estimate
+  </a>
+</header>
 
-  <h2>Call or Text</h2>
-  <p>YOUR PHONE NUMBER</p>
-</div>
+<section>
+  <h2>About Us</h2>
+
+  <p>
+    Bell & Oaks Lawn Care proudly serves homeowners throughout
+    Tulsa, Bixby, Broken Arrow, Glenpool, and Sapulpa.
+    We focus on dependable service, fair pricing, and quality work
+    that keeps your property looking its best year-round.
+  </p>
+</section>
+
+<section>
+  <h2>Our Services</h2>
+
+  <div class="services">
+    <div class="card">🌱 Lawn Mowing</div>
+    <div class="card">✂️ Edging</div>
+    <div class="card">🌿 Weed Eating</div>
+    <div class="card">🍂 Yard Cleanup</div>
+    <div class="card">🪵 Mulch Installation</div>
+    <div class="card">🛻 Junk Removal</div>
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Bell & Oaks?</h2>
+
+  <p>✔ Free Estimates</p>
+  <p>✔ Honest Pricing</p>
+  <p>✔ Reliable Scheduling</p>
+  <p>✔ Professional Workmanship</p>
+  <p>✔ Locally Owned & Operated</p>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+
+  <p><strong>Phone:</strong> 918-625-1118</p>
+
+  <p>
+    <strong>Email:</strong>
+    gageoaks08@gmail.com
+  </p>
+
+  <p>
+    <strong>Service Areas:</strong>
+    Tulsa, Bixby, Broken Arrow, Glenpool, and Sapulpa
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Bell & Oaks Lawn Care</p>
+</footer>
 
 </body>
 </html>
-
