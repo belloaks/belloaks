@@ -3,258 +3,256 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Bell & Oaks Lawn Care</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#f7f7f7;
-color:#222;
-line-height:1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#1d1d1d;
+  background:#f2f0ea;
+  line-height:1.6;
 }
 
-header{
-background:#184d2c;
-color:white;
-padding:80px 20px;
-text-align:center;
+nav{
+  background:#102417;
+  color:white;
+  padding:18px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-header h1{
-font-size:48px;
-margin-bottom:10px;
+nav h2{
+  font-size:22px;
+  letter-spacing:.5px;
 }
 
-header p{
-font-size:20px;
-margin-bottom:25px;
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:15px;
+}
+
+.hero{
+  background:linear-gradient(rgba(16,36,23,.82),rgba(16,36,23,.82)),
+  url("https://images.unsplash.com/photo-1599685315640-69b65c7d0e5f?auto=format&fit=crop&w=1600&q=80");
+  background-size:cover;
+  background-position:center;
+  color:white;
+  padding:95px 7%;
+}
+
+.hero-box{
+  max-width:650px;
+}
+
+.hero h1{
+  font-size:52px;
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+.hero p{
+  font-size:20px;
+  margin-bottom:28px;
 }
 
 .btn{
-display:inline-block;
-background:white;
-color:#184d2c;
-padding:15px 28px;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-transition:.2s;
+  display:inline-block;
+  background:#d7b46a;
+  color:#102417;
+  padding:14px 22px;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-right:10px;
+  margin-top:8px;
 }
 
-.btn:hover{
-opacity:.9;
+.btn-dark{
+  background:white;
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
+  padding:65px 7%;
 }
 
-.section-title{
-text-align:center;
-font-size:34px;
-margin-bottom:30px;
-color:#184d2c;
+.intro{
+  background:white;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:35px;
 }
 
-.about{
-text-align:center;
-font-size:18px;
-max-width:800px;
-margin:auto;
+h2{
+  color:#163b24;
+  font-size:32px;
+  margin-bottom:18px;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:30px;
+.service-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
 }
 
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
-text-align:center;
+.service{
+  background:white;
+  border-left:5px solid #d7b46a;
+  padding:22px;
 }
 
-.card h3{
-color:#184d2c;
-margin-bottom:10px;
+.service h3{
+  color:#163b24;
+  margin-bottom:8px;
 }
 
-.why{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:25px;
+.areas{
+  background:#163b24;
+  color:white;
+  text-align:center;
 }
 
-.why-box{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 3px 12px rgba(0,0,0,.08);
+.areas h2{
+  color:white;
 }
 
 .contact{
-background:#184d2c;
-color:white;
-text-align:center;
-padding:70px 20px;
-}
-
-.contact h2{
-margin-bottom:15px;
-font-size:34px;
+  background:white;
+  text-align:center;
 }
 
 .contact p{
-font-size:18px;
-margin-bottom:10px;
+  font-size:18px;
+  margin:8px 0;
 }
 
 footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
+  background:#102417;
+  color:white;
+  text-align:center;
+  padding:22px;
+  font-size:14px;
 }
 
+@media(max-width:750px){
+  nav{
+    display:block;
+    text-align:center;
+  }
+
+  nav div{
+    margin-top:10px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .intro{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
+  <h2>Bell & Oaks</h2>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<h1>Bell & Oaks Lawn Care</h1>
+<div class="hero">
+  <div class="hero-box">
+    <h1>Lawn care done right.</h1>
+    <p>Quality Care. Honest Results. Serving Tulsa and surrounding areas.</p>
 
-<p>Quality Care. Honest Results.</p>
+    <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
+      Text for a Free Estimate
+    </a>
 
-<a class="btn"
-href="sms:9186251118?&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-Text Us For A Free Estimate
-</a>
+    <a class="btn btn-dark" href="tel:+19186251118">
+      Call 918-625-1118
+    </a>
+  </div>
+</div>
 
-</header>
+<section class="intro">
+  <div>
+    <h2>Local lawn care you can count on</h2>
+    <p>
+      Bell & Oaks Lawn Care provides dependable mowing, edging, cleanup,
+      mulch, and junk removal services. We keep things simple: show up on time,
+      do clean work, and treat your property with respect.
+    </p>
+  </div>
 
-<section>
-
-<h2 class="section-title">About Us</h2>
-
-<p class="about">
-Bell & Oaks Lawn Care proudly serves Tulsa, Bixby, Broken Arrow,
-Glenpool, and Sapulpa. We provide dependable lawn care,
-cleanup, and property maintenance services with a focus on
-quality work, honest pricing, and customer satisfaction.
-</p>
-
+  <div>
+    <h2>What we focus on</h2>
+    <p>Clean cuts. Sharp edges. Fair pricing. Reliable communication.</p>
+  </div>
 </section>
 
-<section>
+<section id="services">
+  <h2>Services</h2>
 
-<h2 class="section-title">Our Services</h2>
+  <div class="service-list">
+    <div class="service">
+      <h3>Mowing</h3>
+      <p>Regular lawn mowing to keep your yard clean and maintained.</p>
+    </div>
 
-<div class="services">
+    <div class="service">
+      <h3>Edging</h3>
+      <p>Clean edges along driveways, sidewalks, beds, and walkways.</p>
+    </div>
 
-<div class="card">
-<h3>Lawn Mowing</h3>
-<p>Professional mowing for a clean, healthy lawn.</p>
-</div>
+    <div class="service">
+      <h3>Weed Eating</h3>
+      <p>Trimming around fences, corners, trees, and tight spots.</p>
+    </div>
 
-<div class="card">
-<h3>Edging</h3>
-<p>Sharp edges that make your property stand out.</p>
-</div>
+    <div class="service">
+      <h3>Mulch</h3>
+      <p>Fresh mulch installation for beds and curb appeal.</p>
+    </div>
 
-<div class="card">
-<h3>Weed Eating</h3>
-<p>Clean up hard-to-reach areas and fence lines.</p>
-</div>
+    <div class="service">
+      <h3>Cleanup</h3>
+      <p>Yard cleanup, debris removal, leaves, and overgrowth.</p>
+    </div>
 
-<div class="card">
-<h3>Yard Cleanup</h3>
-<p>Leaves, debris, overgrowth, and seasonal cleanup.</p>
-</div>
-
-<div class="card">
-<h3>Mulch Installation</h3>
-<p>Fresh mulch to improve appearance and curb appeal.</p>
-</div>
-
-<div class="card">
-<h3>Junk Removal</h3>
-<p>Fast removal of unwanted items and yard debris.</p>
-</div>
-
-</div>
-
+    <div class="service">
+      <h3>Junk Removal</h3>
+      <p>Removal of unwanted items, yard debris, and outdoor junk.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-
-<h2 class="section-title">Why Choose Us?</h2>
-
-<div class="why">
-
-<div class="why-box">
-<h3>Free Estimates</h3>
-<p>No obligation quotes for every property.</p>
-</div>
-
-<div class="why-box">
-<h3>Reliable Service</h3>
-<p>We show up when we say we will.</p>
-</div>
-
-<div class="why-box">
-<h3>Honest Pricing</h3>
-<p>Fair rates with no hidden surprises.</p>
-</div>
-
-<div class="why-box">
-<h3>Locally Owned</h3>
-<p>Proudly serving the Tulsa area.</p>
-</div>
-
-</div>
-
+<section class="areas">
+  <h2>Service Area</h2>
+  <p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
+  <h2>Get a Free Estimate</h2>
+  <p><strong>Text or Call:</strong> 918-625-1118</p>
+  <p><strong>Email:</strong> gageoaks08@gmail.com</p>
 
-<h2>Get A Free Estimate</h2>
-
-<p>Call or Text: 918-625-1118</p>
-
-<p>Email: gageoaks08@gmail.com</p>
-
-<p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
-
-<br>
-
-<a class="btn"
-href="sms:9186251118?&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-Request Estimate
-</a>
-
+  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
+    Send Estimate Text
+  </a>
 </section>
 
 <footer>
-
-© 2026 Bell & Oaks Lawn Care
-
+  © 2026 Bell & Oaks Lawn Care. All rights reserved.
 </footer>
 
 </body>
