@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -20,13 +20,13 @@ nav{
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
 
 .hero{background:#163b24;color:white;text-align:center;padding:75px 7%}
-.hero img{width:230px;max-width:75%;margin-bottom:18px}
+.hero img{width:260px;max-width:80%;margin-bottom:18px}
 .hero h1{font-size:46px}
 .hero p{font-size:21px;margin:12px 0 25px}
 
 .btn{
   display:inline-block;background:#d7b46a;color:#102417;
-  padding:14px 22px;border-radius:5px;text-decoration:none;
+  padding:14px 22px;border-radius:6px;text-decoration:none;
   font-weight:bold;margin:6px;
 }
 .btn-light{background:white}
@@ -35,23 +35,65 @@ section{padding:60px 7%;max-width:1200px;margin:auto}
 h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 .lead{text-align:center;max-width:850px;margin:0 auto 30px}
 
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:22px;
+}
+
+.service-card{
+  background:white;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 8px 22px rgba(0,0,0,.11);
+  border-top:5px solid #496b3a;
+}
+
+.service-card h3{
+  color:#163b24;
+  font-size:22px;
+  margin-bottom:14px;
+}
+
+.check-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#eef3ea;
+  border-radius:999px;
+  padding:9px 13px;
+  margin:9px 0;
+  font-weight:600;
+}
+
+.check{
+  background:#496b3a;
+  color:white;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  flex-shrink:0;
+}
+
+.price-tag{
+  margin-top:16px;
+  background:#d7b46a;
+  color:#102417;
+  padding:12px;
+  border-radius:10px;
+  font-weight:bold;
+  text-align:center;
+}
+
 .work img{
-  width:100%;border-radius:10px;
+  width:100%;border-radius:12px;
   box-shadow:0 4px 18px rgba(0,0,0,.18);
 }
 .caption{text-align:center;margin-top:12px;font-weight:bold}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:18px;
-}
-.card{
-  background:white;padding:24px;border-left:5px solid #d7b46a;
-  box-shadow:0 3px 12px rgba(0,0,0,.08);
-}
-.card h3{color:#163b24;margin-bottom:8px}
-.price{font-size:22px;font-weight:bold;color:#102417;margin:8px 0}
 
 .note{
   text-align:center;
@@ -92,9 +134,9 @@ footer img{width:75px;margin-bottom:8px}
 
   <div>
     <a href="#home">Home</a>
-    <a href="#work">Work</a>
     <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
+    <a href="#work">Work</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -122,58 +164,68 @@ footer img{width:75px;margin-bottom:8px}
   </p>
 </section>
 
+<section id="services">
+  <h2>Services & Starting Prices</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <h3>Lawn Maintenance</h3>
+
+      <div class="check-item"><span class="check">✓</span> Mowing</div>
+      <div class="check-item"><span class="check">✓</span> Edging</div>
+      <div class="check-item"><span class="check">✓</span> Weed Eating</div>
+      <div class="check-item"><span class="check">✓</span> Basic Bush Trimming</div>
+
+      <div class="price-tag">Starting at $50</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Mulch & Flower Beds</h3>
+
+      <div class="check-item"><span class="check">✓</span> Remove Old Mulch</div>
+      <div class="check-item"><span class="check">✓</span> Pull Grass & Weeds</div>
+      <div class="check-item"><span class="check">✓</span> Create or Reshape Beds</div>
+      <div class="check-item"><span class="check">✓</span> Install Fresh Mulch</div>
+
+      <div class="price-tag">Starting at $125</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Cleanups</h3>
+
+      <div class="check-item"><span class="check">✓</span> Yard Cleanup</div>
+      <div class="check-item"><span class="check">✓</span> Seasonal Cleanup</div>
+      <div class="check-item"><span class="check">✓</span> Gutter Cleaning</div>
+      <div class="check-item"><span class="check">✓</span> Haul Off Debris</div>
+
+      <div class="price-tag">Starting at $155</div>
+    </div>
+
+    <div class="service-card">
+      <h3>Junk Removal</h3>
+
+      <div class="check-item"><span class="check">✓</span> Household Junk</div>
+      <div class="check-item"><span class="check">✓</span> Furniture & Appliances</div>
+      <div class="check-item"><span class="check">✓</span> Yard Waste</div>
+      <div class="check-item"><span class="check">✓</span> Garage & Shed Cleanouts</div>
+      <div class="check-item"><span class="check">✓</span> General Unwanted Items</div>
+
+      <div class="price-tag">Starting at $75</div>
+    </div>
+
+  </div>
+
+  <p class="note">
+    Prices vary based on property size, condition, debris volume, hauling requirements,
+    disposal fees, and materials needed. Free estimates available.
+  </p>
+</section>
+
 <section class="work" id="work">
   <h2>Recent Before & After</h2>
   <img src="Before-after.png" alt="Before and after lawn cleanup by Bell and Oaks">
   <p class="caption">Overgrown backyard restored with mowing and cleanup.</p>
-</section>
-
-<section id="services">
-  <h2>Services</h2>
-
-  <div class="grid">
-    <div class="card"><h3>Mowing</h3><p>Clean, even cuts for a maintained yard.</p></div>
-    <div class="card"><h3>Edging</h3><p>Sharp borders along sidewalks and driveways.</p></div>
-    <div class="card"><h3>Weed Eating</h3><p>Trimming around fences, trees, corners, and tight areas.</p></div>
-    <div class="card"><h3>Bush Trimming</h3><p>Basic trimming to keep shrubs and bushes looking clean.</p></div>
-    <div class="card"><h3>Cleanups</h3><p>Overgrowth, leaves, debris, seasonal cleanup, and yard recovery.</p></div>
-    <div class="card"><h3>Mulch & Flower Beds</h3><p>Old mulch removal, weed pulling, bed shaping, and fresh mulch installation.</p></div>
-    <div class="card"><h3>Junk Removal</h3><p>Household junk, furniture, appliances, yard debris, garage cleanouts, and unwanted items.</p></div>
-  </div>
-</section>
-
-<section id="pricing">
-  <h2>Pricing</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Mowing Package</h3>
-      <p class="price">Starting at $50</p>
-      <p>Includes mowing, edging, weed eating, and basic bush trimming.</p>
-    </div>
-
-    <div class="card">
-      <h3>Cleanups</h3>
-      <p class="price">Starting at $155</p>
-      <p>Includes debris haul-off, yard cleanup, seasonal cleanup, and gutter cleaning.</p>
-    </div>
-
-    <div class="card">
-      <h3>Mulch & Flower Bed Refresh</h3>
-      <p class="price">Starting at $125</p>
-      <p>Includes removing old mulch, pulling grass and weeds from flower beds, creating or reshaping flower beds, and installing fresh mulch.</p>
-    </div>
-
-    <div class="card">
-      <h3>Junk Removal</h3>
-      <p class="price">Starting at $75</p>
-      <p>Removal of household junk, furniture, appliances, yard debris, construction debris, garage cleanouts, shed cleanouts, curbside pickup, and unwanted items.</p>
-    </div>
-  </div>
-
-  <p class="note">
-    Prices vary based on property size, condition, debris volume, hauling requirements, disposal fees, and materials needed. Free estimates available.
-  </p>
 </section>
 
 <section class="area">
@@ -181,7 +233,7 @@ footer img{width:75px;margin-bottom:8px}
   <p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
   <h2>Leave Us a Review</h2>
   <p>Had a good experience with Bell & Oaks? We’d appreciate your feedback.</p>
 
@@ -202,7 +254,7 @@ footer img{width:75px;margin-bottom:8px}
 </section>
 
 <footer>
-  <img src="logo-icon.jpeg" alt="Bell and Oaks logo">
+  <img src="logo-icon.png" alt="Bell and Oaks logo">
   <p>Bell & Oaks Lawn Care</p>
   <p>© 2026 • Quality Care. Honest Results.</p>
 </footer>
