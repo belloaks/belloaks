@@ -7,44 +7,106 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#f4f1e8;color:#1b1b1b;line-height:1.6}
-nav{background:#102417;color:white;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+
+nav{
+  background:#102417;
+  color:white;
+  padding:16px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
 .brand{display:flex;align-items:center;gap:12px}
 .brand img{width:48px;height:48px;object-fit:contain}
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
 
-.hero{background:#163b24;color:white;text-align:center;padding:75px 7%}
+.hero{
+  background:#163b24;
+  color:white;
+  text-align:center;
+  padding:75px 7%;
+}
+
 .hero img{width:220px;max-width:70%;margin-bottom:18px}
 .hero h1{font-size:48px}
 .hero p{font-size:21px;margin:12px 0 25px}
 
-.btn{display:inline-block;background:#d7b46a;color:#102417;padding:14px 22px;border-radius:5px;text-decoration:none;font-weight:bold;margin:6px}
+.btn{
+  display:inline-block;
+  background:#d7b46a;
+  color:#102417;
+  padding:14px 22px;
+  border-radius:5px;
+  text-decoration:none;
+  font-weight:bold;
+  margin:6px;
+}
+
 .btn-light{background:white}
 
 section{padding:60px 7%;max-width:1200px;margin:auto}
 h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 .lead{text-align:center;max-width:800px;margin:0 auto 30px}
 
-.work img{width:100%;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.work img{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 4px 18px rgba(0,0,0,.18);
+}
+
 .caption{text-align:center;margin-top:12px;font-weight:bold}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{background:white;padding:24px;border-left:5px solid #d7b46a;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:white;
+  padding:24px;
+  border-left:5px solid #d7b46a;
+  box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
 .card h3{color:#163b24;margin-bottom:8px}
 
-.area{background:#163b24;color:white;text-align:center;max-width:none}
+.area{
+  background:#163b24;
+  color:white;
+  text-align:center;
+  max-width:none;
+}
+
 .area h2{color:white}
 
-.contact{background:white;text-align:center}
+.contact{
+  background:white;
+  text-align:center;
+}
+
 .contact p{font-size:18px;margin:8px}
 
-footer{background:#102417;color:white;text-align:center;padding:28px}
+footer{
+  background:#102417;
+  color:white;
+  text-align:center;
+  padding:28px;
+}
+
 footer img{width:70px;margin-bottom:8px}
 
 @media(max-width:750px){
-nav{display:block;text-align:center}
-nav a{display:inline-block;margin:8px}
-.hero h1{font-size:36px}
+  nav{display:block;text-align:center}
+  .brand{justify-content:center;margin-bottom:10px}
+  nav a{display:inline-block;margin:8px}
+  .hero h1{font-size:36px}
 }
 </style>
 </head>
@@ -56,16 +118,20 @@ nav a{display:inline-block;margin:8px}
     <img src="logo-icon.png" alt="Bell and Oaks small logo">
     <strong>Bell & Oaks Lawn Care</strong>
   </div>
+
   <div>
+    <a href="#home">Home</a>
     <a href="#work">Work</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
-<div class="hero">
+<div class="hero" id="home">
   <img src="logo-main.png" alt="Bell and Oaks main logo">
+
   <h1>Quality Care. Honest Results.</h1>
+
   <p>Local lawn care, cleanup, mulch, and junk removal.</p>
 
   <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
@@ -79,6 +145,7 @@ nav a{display:inline-block;margin:8px}
 
 <section>
   <h2>Local Lawn Care You Can Count On</h2>
+
   <p class="lead">
     Bell & Oaks Lawn Care serves Tulsa, Bixby, Broken Arrow, Glenpool, and Sapulpa.
     We focus on clean work, honest pricing, and reliable communication.
@@ -87,7 +154,9 @@ nav a{display:inline-block;margin:8px}
 
 <section class="work" id="work">
   <h2>Recent Before & After</h2>
+
   <img src="cleanup-before-after.png" alt="Before and after lawn cleanup by Bell and Oaks">
+
   <p class="caption">Overgrown backyard restored with mowing and cleanup.</p>
 </section>
 
@@ -95,12 +164,35 @@ nav a{display:inline-block;margin:8px}
   <h2>Services</h2>
 
   <div class="grid">
-    <div class="card"><h3>Mowing</h3><p>Clean, even cuts for a maintained yard.</p></div>
-    <div class="card"><h3>Edging</h3><p>Sharp borders along sidewalks and driveways.</p></div>
-    <div class="card"><h3>Weed Eating</h3><p>Trimming around fences, trees, and tight areas.</p></div>
-    <div class="card"><h3>Mulch</h3><p>Fresh mulch for beds and curb appeal.</p></div>
-    <div class="card"><h3>Cleanup</h3><p>Overgrowth, leaves, debris, and yard recovery.</p></div>
-    <div class="card"><h3>Junk Removal</h3><p>Removal of unwanted outdoor items and debris.</p></div>
+    <div class="card">
+      <h3>Mowing</h3>
+      <p>Clean, even cuts for a maintained yard.</p>
+    </div>
+
+    <div class="card">
+      <h3>Edging</h3>
+      <p>Sharp borders along sidewalks and driveways.</p>
+    </div>
+
+    <div class="card">
+      <h3>Weed Eating</h3>
+      <p>Trimming around fences, trees, and tight areas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mulch</h3>
+      <p>Fresh mulch for beds and curb appeal.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cleanup</h3>
+      <p>Overgrowth, leaves, debris, and yard recovery.</p>
+    </div>
+
+    <div class="card">
+      <h3>Junk Removal</h3>
+      <p>Removal of unwanted outdoor items and debris.</p>
+    </div>
   </div>
 </section>
 
@@ -111,6 +203,7 @@ nav a{display:inline-block;margin:8px}
 
 <section class="contact" id="contact">
   <h2>Get a Free Estimate</h2>
+
   <p><strong>Text or Call:</strong> 918-625-1118</p>
   <p><strong>Email:</strong> gageoaks08@gmail.com</p>
 
@@ -121,6 +214,7 @@ nav a{display:inline-block;margin:8px}
 
 <footer>
   <img src="logo-icon.png" alt="Bell and Oaks logo">
+
   <p>Bell & Oaks Lawn Care</p>
   <p>© 2026 • Quality Care. Honest Results.</p>
 </footer>
