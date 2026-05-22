@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -16,17 +16,20 @@ nav{
   position:sticky;top:0;z-index:10;
 }
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{width:50px;height:50px;object-fit:contain}
+.brand img{width:60px;height:45px;object-fit:contain}
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
 
-.hero{background:#163b24;color:white;text-align:center;padding:75px 7%}
-.hero img{width:260px;max-width:80%;margin-bottom:18px}
+.hero{
+  background:#163b24;color:white;text-align:center;
+  padding:80px 7%;
+}
+.hero img{width:330px;max-width:85%;margin-bottom:20px}
 .hero h1{font-size:46px}
 .hero p{font-size:21px;margin:12px 0 25px}
 
 .btn{
   display:inline-block;background:#d7b46a;color:#102417;
-  padding:14px 22px;border-radius:6px;text-decoration:none;
+  padding:14px 22px;border-radius:7px;text-decoration:none;
   font-weight:bold;margin:6px;
 }
 .btn-light{background:white}
@@ -37,22 +40,22 @@ h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 
 .services-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:22px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:24px;
 }
 
 .service-card{
   background:white;
   padding:28px;
   border-radius:18px;
-  box-shadow:0 8px 22px rgba(0,0,0,.11);
-  border-top:5px solid #496b3a;
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
+  border-top:6px solid #496b3a;
 }
 
 .service-card h3{
   color:#163b24;
-  font-size:22px;
-  margin-bottom:14px;
+  font-size:23px;
+  margin-bottom:16px;
 }
 
 .check-item{
@@ -61,8 +64,8 @@ h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
   gap:10px;
   background:#eef3ea;
   border-radius:999px;
-  padding:9px 13px;
-  margin:9px 0;
+  padding:10px 14px;
+  margin:10px 0;
   font-weight:600;
 }
 
@@ -80,27 +83,28 @@ h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 }
 
 .price-tag{
-  margin-top:16px;
+  margin-top:18px;
   background:#d7b46a;
   color:#102417;
-  padding:12px;
-  border-radius:10px;
+  padding:13px;
+  border-radius:12px;
   font-weight:bold;
   text-align:center;
 }
-
-.work img{
-  width:100%;border-radius:12px;
-  box-shadow:0 4px 18px rgba(0,0,0,.18);
-}
-.caption{text-align:center;margin-top:12px;font-weight:bold}
 
 .note{
   text-align:center;
   max-width:850px;
-  margin:25px auto 0;
+  margin:30px auto 0;
   font-weight:bold;
 }
+
+.work img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 4px 18px rgba(0,0,0,.18);
+}
+.caption{text-align:center;margin-top:12px;font-weight:bold}
 
 .area{
   background:#163b24;color:white;text-align:center;max-width:none;
@@ -113,7 +117,7 @@ h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 footer{
   background:#102417;color:white;text-align:center;padding:28px;
 }
-footer img{width:75px;margin-bottom:8px}
+footer img{width:90px;margin-bottom:8px}
 
 @media(max-width:750px){
   nav{display:block;text-align:center}
@@ -145,7 +149,7 @@ footer img{width:75px;margin-bottom:8px}
   <img src="logo-MAIN.png" alt="Bell and Oaks main logo">
 
   <h1>Quality Care. Honest Results.</h1>
-  <p>Local lawn care, cleanup, mulch, and junk removal.</p>
+  <p>Local lawn care, cleanups, mulch, and junk removal.</p>
 
   <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
     Text for Free Estimate
@@ -171,46 +175,38 @@ footer img{width:75px;margin-bottom:8px}
 
     <div class="service-card">
       <h3>Lawn Maintenance</h3>
-
-      <div class="check-item"><span class="check">✓</span> Mowing</div>
-      <div class="check-item"><span class="check">✓</span> Edging</div>
-      <div class="check-item"><span class="check">✓</span> Weed Eating</div>
-      <div class="check-item"><span class="check">✓</span> Basic Bush Trimming</div>
-
+      <div class="check-item"><span class="check">✓</span>Mowing</div>
+      <div class="check-item"><span class="check">✓</span>Edging</div>
+      <div class="check-item"><span class="check">✓</span>Weed Eating</div>
+      <div class="check-item"><span class="check">✓</span>Basic Bush Trimming</div>
       <div class="price-tag">Starting at $50</div>
     </div>
 
     <div class="service-card">
       <h3>Mulch & Flower Beds</h3>
-
-      <div class="check-item"><span class="check">✓</span> Remove Old Mulch</div>
-      <div class="check-item"><span class="check">✓</span> Pull Grass & Weeds</div>
-      <div class="check-item"><span class="check">✓</span> Create or Reshape Beds</div>
-      <div class="check-item"><span class="check">✓</span> Install Fresh Mulch</div>
-
+      <div class="check-item"><span class="check">✓</span>Remove Old Mulch</div>
+      <div class="check-item"><span class="check">✓</span>Pull Grass & Weeds</div>
+      <div class="check-item"><span class="check">✓</span>Create or Reshape Beds</div>
+      <div class="check-item"><span class="check">✓</span>Install Fresh Mulch</div>
       <div class="price-tag">Starting at $125</div>
     </div>
 
     <div class="service-card">
       <h3>Cleanups</h3>
-
-      <div class="check-item"><span class="check">✓</span> Yard Cleanup</div>
-      <div class="check-item"><span class="check">✓</span> Seasonal Cleanup</div>
-      <div class="check-item"><span class="check">✓</span> Gutter Cleaning</div>
-      <div class="check-item"><span class="check">✓</span> Haul Off Debris</div>
-
+      <div class="check-item"><span class="check">✓</span>Yard Cleanup</div>
+      <div class="check-item"><span class="check">✓</span>Seasonal Cleanup</div>
+      <div class="check-item"><span class="check">✓</span>Gutter Cleaning</div>
+      <div class="check-item"><span class="check">✓</span>Haul Off Debris</div>
       <div class="price-tag">Starting at $155</div>
     </div>
 
     <div class="service-card">
       <h3>Junk Removal</h3>
-
-      <div class="check-item"><span class="check">✓</span> Household Junk</div>
-      <div class="check-item"><span class="check">✓</span> Furniture & Appliances</div>
-      <div class="check-item"><span class="check">✓</span> Yard Waste</div>
-      <div class="check-item"><span class="check">✓</span> Garage & Shed Cleanouts</div>
-      <div class="check-item"><span class="check">✓</span> General Unwanted Items</div>
-
+      <div class="check-item"><span class="check">✓</span>Household Junk</div>
+      <div class="check-item"><span class="check">✓</span>Furniture & Appliances</div>
+      <div class="check-item"><span class="check">✓</span>Yard Waste</div>
+      <div class="check-item"><span class="check">✓</span>Garage & Shed Cleanouts</div>
+      <div class="check-item"><span class="check">✓</span>General Unwanted Items</div>
       <div class="price-tag">Starting at $75</div>
     </div>
 
@@ -244,7 +240,6 @@ footer img{width:75px;margin-bottom:8px}
 
 <section class="contact" id="contact">
   <h2>Get a Free Estimate</h2>
-
   <p><strong>Text or Call:</strong> 918-625-1118</p>
   <p><strong>Email:</strong> gageoaks08@gmail.com</p>
 
