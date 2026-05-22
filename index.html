@@ -10,114 +10,51 @@
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#f4f1e8;color:#1b1b1b;line-height:1.6}
 
-nav{
-  background:#102417;color:white;padding:16px 7%;
-  display:flex;justify-content:space-between;align-items:center;
-  position:sticky;top:0;z-index:10;
-}
+nav{background:#102417;color:white;padding:16px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{width:60px;height:45px;object-fit:contain}
+.brand img{width:50px;height:50px;object-fit:contain}
 nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold}
 
-.hero{
-  background:#163b24;color:white;text-align:center;
-  padding:80px 7%;
-}
-.hero img{width:330px;max-width:85%;margin-bottom:20px}
+.hero{background:#163b24;color:white;text-align:center;padding:75px 7%}
+.hero img{width:240px;max-width:80%;margin-bottom:18px}
 .hero h1{font-size:46px}
 .hero p{font-size:21px;margin:12px 0 25px}
 
-.btn{
-  display:inline-block;background:#d7b46a;color:#102417;
-  padding:14px 22px;border-radius:7px;text-decoration:none;
-  font-weight:bold;margin:6px;
-}
+.btn{display:inline-block;background:#d7b46a;color:#102417;padding:14px 22px;border-radius:6px;text-decoration:none;font-weight:bold;margin:6px;border:none;cursor:pointer;font-size:16px}
 .btn-light{background:white}
 
 section{padding:60px 7%;max-width:1200px;margin:auto}
 h2{color:#163b24;font-size:34px;margin-bottom:20px;text-align:center}
 .lead{text-align:center;max-width:850px;margin:0 auto 30px}
 
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-}
-
-.service-card{
-  background:white;
-  padding:28px;
-  border-radius:18px;
-  box-shadow:0 10px 24px rgba(0,0,0,.12);
-  border-top:6px solid #496b3a;
-}
-
-.service-card h3{
-  color:#163b24;
-  font-size:23px;
-  margin-bottom:16px;
-}
-
-.check-item{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#eef3ea;
-  border-radius:999px;
-  padding:10px 14px;
-  margin:10px 0;
-  font-weight:600;
-}
-
-.check{
-  background:#496b3a;
-  color:white;
-  width:24px;
-  height:24px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:14px;
-  flex-shrink:0;
-}
-
-.price-tag{
-  margin-top:18px;
-  background:#d7b46a;
-  color:#102417;
-  padding:13px;
-  border-radius:12px;
-  font-weight:bold;
-  text-align:center;
-}
-
-.note{
-  text-align:center;
-  max-width:850px;
-  margin:30px auto 0;
-  font-weight:bold;
-}
-
-.work img{
-  width:100%;
-  border-radius:12px;
-  box-shadow:0 4px 18px rgba(0,0,0,.18);
-}
+.work img{width:100%;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,.18)}
 .caption{text-align:center;margin-top:12px;font-weight:bold}
 
-.area{
-  background:#163b24;color:white;text-align:center;max-width:none;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:white;padding:24px;border-left:5px solid #d7b46a;box-shadow:0 3px 12px rgba(0,0,0,.08);border-radius:10px}
+.card h3{color:#163b24;margin-bottom:8px}
+.card ul{list-style:none;margin-top:12px}
+.card li{background:#eef1e8;margin:8px 0;padding:9px 12px;border-radius:20px}
+.price{background:#d7b46a;color:#102417;text-align:center;font-weight:bold;padding:12px;border-radius:6px;margin-top:15px}
+
+.note{text-align:center;max-width:850px;margin:25px auto 0;font-weight:bold}
+
+.reviews{background:white;border-radius:10px}
+.review-stars{color:#d7b46a;font-size:22px;margin-bottom:8px}
+
+.area{background:#163b24;color:white;text-align:center;max-width:none}
 .area h2{color:white}
 
-.reviews,.contact{background:white;text-align:center}
-.reviews p,.contact p{font-size:18px;margin:8px}
+.form-box{background:white;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.12);padding:30px;max-width:800px;margin:auto}
+form{display:grid;gap:14px}
+input,select,textarea{width:100%;padding:14px;border:1px solid #ccc;border-radius:6px;font-size:16px}
+textarea{min-height:130px}
 
-footer{
-  background:#102417;color:white;text-align:center;padding:28px;
-}
-footer img{width:90px;margin-bottom:8px}
+.contact{text-align:center}
+.contact p{font-size:18px;margin:8px}
+
+footer{background:#102417;color:white;text-align:center;padding:28px}
+footer img{width:75px;margin-bottom:8px}
 
 @media(max-width:750px){
   nav{display:block;text-align:center}
@@ -132,7 +69,7 @@ footer img{width:90px;margin-bottom:8px}
 
 <nav>
   <div class="brand">
-    <img src="logo-icon.png" alt="Bell and Oaks logo">
+    <img src="logo-icon.jpeg" alt="Bell and Oaks logo">
     <strong>Bell & Oaks Lawn Care</strong>
   </div>
 
@@ -140,24 +77,19 @@ footer img{width:90px;margin-bottom:8px}
     <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#work">Work</a>
+    <a href="#estimate">Estimate</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="hero" id="home">
-  <img src="logo-MAIN.png" alt="Bell and Oaks main logo">
-
+  <img src="logo-main.jpeg" alt="Bell and Oaks main logo">
   <h1>Quality Care. Honest Results.</h1>
-  <p>Local lawn care, cleanups, mulch, and junk removal.</p>
+  <p>Local lawn care, cleanup, mulch, and junk removal.</p>
 
-  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-    Text for Free Estimate
-  </a>
-
-  <a class="btn btn-light" href="tel:+19186251118">
-    Call 918-625-1118
-  </a>
+  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">Text for Free Estimate</a>
+  <a class="btn btn-light" href="tel:+19186251118">Call 918-625-1118</a>
 </div>
 
 <section>
@@ -170,58 +102,117 @@ footer img{width:90px;margin-bottom:8px}
 
 <section id="services">
   <h2>Services & Starting Prices</h2>
-
-  <div class="services-grid">
-
-    <div class="service-card">
-      <h3>Lawn Maintenance</h3>
-      <div class="check-item"><span class="check">✓</span>Mowing</div>
-      <div class="check-item"><span class="check">✓</span>Edging</div>
-      <div class="check-item"><span class="check">✓</span>Weed Eating</div>
-      <div class="check-item"><span class="check">✓</span>Basic Bush Trimming</div>
-      <div class="price-tag">Starting at $50</div>
-    </div>
-
-    <div class="service-card">
-      <h3>Mulch & Flower Beds</h3>
-      <div class="check-item"><span class="check">✓</span>Remove Old Mulch</div>
-      <div class="check-item"><span class="check">✓</span>Pull Grass & Weeds</div>
-      <div class="check-item"><span class="check">✓</span>Create or Reshape Beds</div>
-      <div class="check-item"><span class="check">✓</span>Install Fresh Mulch</div>
-      <div class="price-tag">Starting at $125</div>
-    </div>
-
-    <div class="service-card">
-      <h3>Cleanups</h3>
-      <div class="check-item"><span class="check">✓</span>Yard Cleanup</div>
-      <div class="check-item"><span class="check">✓</span>Seasonal Cleanup</div>
-      <div class="check-item"><span class="check">✓</span>Gutter Cleaning</div>
-      <div class="check-item"><span class="check">✓</span>Haul Off Debris</div>
-      <div class="price-tag">Starting at $155</div>
-    </div>
-
-    <div class="service-card">
-      <h3>Junk Removal</h3>
-      <div class="check-item"><span class="check">✓</span>Household Junk</div>
-      <div class="check-item"><span class="check">✓</span>Furniture & Appliances</div>
-      <div class="check-item"><span class="check">✓</span>Yard Waste</div>
-      <div class="check-item"><span class="check">✓</span>Garage & Shed Cleanouts</div>
-      <div class="check-item"><span class="check">✓</span>General Unwanted Items</div>
-      <div class="price-tag">Starting at $75</div>
-    </div>
-
-  </div>
-
-  <p class="note">
-    Prices vary based on property size, condition, debris volume, hauling requirements,
-    disposal fees, and materials needed. Free estimates available.
+  <p class="lead">
+    Prices vary based on property size, condition, materials needed, debris volume, and job difficulty.
+    Contact us for a free estimate.
   </p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Lawn Maintenance</h3>
+      <ul>
+        <li>✓ Mowing</li>
+        <li>✓ Edging</li>
+        <li>✓ Weed Eating</li>
+        <li>✓ Basic Bush Trimming</li>
+      </ul>
+      <div class="price">Starting at $50</div>
+      <a class="btn" href="#estimate">Get Free Estimate</a>
+    </div>
+
+    <div class="card">
+      <h3>Mulch & Flower Beds</h3>
+      <ul>
+        <li>✓ Remove Old Mulch</li>
+        <li>✓ Pull Grass & Weeds</li>
+        <li>✓ Create or Reshape Beds</li>
+        <li>✓ Install Fresh Mulch</li>
+      </ul>
+      <div class="price">Starting at $125</div>
+      <a class="btn" href="#estimate">Get Free Estimate</a>
+    </div>
+
+    <div class="card">
+      <h3>Cleanups</h3>
+      <ul>
+        <li>✓ Yard Cleanup</li>
+        <li>✓ Seasonal Cleanup</li>
+        <li>✓ Gutter Cleaning</li>
+        <li>✓ Haul Off Debris</li>
+      </ul>
+      <div class="price">Starting at $155</div>
+      <a class="btn" href="#estimate">Get Free Estimate</a>
+    </div>
+
+    <div class="card">
+      <h3>Junk Removal</h3>
+      <ul>
+        <li>✓ Household Junk</li>
+        <li>✓ Furniture & Appliances</li>
+        <li>✓ Yard Waste</li>
+        <li>✓ Garage & Shed Cleanouts</li>
+        <li>✓ General Unwanted Items</li>
+      </ul>
+      <div class="price">Starting at $75</div>
+      <a class="btn" href="#estimate">Get Free Estimate</a>
+    </div>
+  </div>
 </section>
 
 <section class="work" id="work">
   <h2>Recent Before & After</h2>
-  <img src="Before-after.png" alt="Before and after lawn cleanup by Bell and Oaks">
+  <img src="cleanup-before-after.jpeg" alt="Before and after lawn cleanup by Bell and Oaks">
   <p class="caption">Overgrown backyard restored with mowing and cleanup.</p>
+</section>
+
+<section class="form-box" id="estimate">
+  <h2>Request a Free Estimate</h2>
+
+  <form action="https://formspree.io/f/xykvjeql" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address">
+    <input type="text" name="address" placeholder="Property Address">
+
+    <select name="service" required>
+      <option value="">Service Needed</option>
+      <option>Lawn Maintenance</option>
+      <option>Mulch & Flower Beds</option>
+      <option>Cleanup</option>
+      <option>Junk Removal</option>
+      <option>Other</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us about the job"></textarea>
+
+    <button class="btn" type="submit">Send Estimate Request</button>
+  </form>
+</section>
+
+<section class="reviews" id="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Fast response and great work. The yard looked amazing."</p>
+      <strong>- Tulsa Customer</strong>
+    </div>
+
+    <div class="card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Very professional, reliable, and fair pricing."</p>
+      <strong>- Broken Arrow Customer</strong>
+    </div>
+
+    <div class="card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Great cleanup work. Will definitely use Bell & Oaks again."</p>
+      <strong>- Bixby Customer</strong>
+    </div>
+  </div>
+
+  <p class="note">Google reviews coming soon.</p>
 </section>
 
 <section class="area">
@@ -229,29 +220,21 @@ footer img{width:90px;margin-bottom:8px}
   <p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
 </section>
 
-<section class="reviews" id="reviews">
-  <h2>Leave Us a Review</h2>
-  <p>Had a good experience with Bell & Oaks? We’d appreciate your feedback.</p>
-
-  <a class="btn" href="mailto:gageoaks08@gmail.com?subject=Bell%20%26%20Oaks%20Review&body=Hi%2C%20I%20wanted%20to%20leave%20a%20review%20for%20Bell%20%26%20Oaks%20Lawn%20Care.%0A%0AReview%3A%20">
-    Leave a Review
-  </a>
-</section>
-
 <section class="contact" id="contact">
-  <h2>Get a Free Estimate</h2>
+  <h2>Contact Bell & Oaks</h2>
   <p><strong>Text or Call:</strong> 918-625-1118</p>
   <p><strong>Email:</strong> gageoaks08@gmail.com</p>
 
-  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">
-    Send Estimate Text
-  </a>
+  <a class="btn" href="sms:+19186251118&body=Hi%2C%20I%E2%80%99m%20interested%20in%20a%20free%20estimate%20for%20my%20property.">Send Estimate Text</a>
 </section>
 
 <footer>
-  <img src="logo-icon.png" alt="Bell and Oaks logo">
+  <img src="logo-icon.jpeg" alt="Bell and Oaks logo">
   <p>Bell & Oaks Lawn Care</p>
-  <p>© 2026 • Quality Care. Honest Results.</p>
+  <p>Quality Care. Honest Results.</p>
+  <p>Tulsa • Bixby • Broken Arrow • Glenpool • Sapulpa</p>
+  <p>918-625-1118 • gageoaks08@gmail.com</p>
+  <p>© 2026 Bell & Oaks Lawn Care</p>
 </footer>
 
 </body>
